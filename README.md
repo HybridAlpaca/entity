@@ -1,0 +1,2 @@
+# entity
+🗿 Composited entity model
