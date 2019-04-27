@@ -2,9 +2,9 @@
 
 #include <entity.h>
 
-struct kernel_api;
+struct kernel_i;
 
-extern kernel_api * kernel;
+extern kernel_i * kernel;
 
 uint32_t entity_index_create();
 

@@ -1,7 +1,7 @@
 #include "state.h"
 #include <kernel.h>
 
-kernel_api * kernel;
+kernel_i * kernel;
 
 static entity_index_i entity_index
 {
@@ -9,7 +9,7 @@ static entity_index_i entity_index
 	entity_index_destroy
 };
 
-bool start(kernel_api * api)
+bool start(kernel_i * api)
 {
 	kernel = api;
 
@@ -30,7 +30,7 @@ bool update()
 
 const char * exports[]{ ENTITY_INDEX_INTERFACE_NAME };
 
-extern "C" module_t module
+extern "C" const module_desc_t module
 {
 	"entity",
 
